@@ -14,6 +14,8 @@
 		1411AAC41B687C1B00D5B764 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1411AAC31B687C1B00D5B764 /* Images.xcassets */; };
 		1411AAC71B687C1B00D5B764 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1411AAC51B687C1B00D5B764 /* LaunchScreen.xib */; };
 		1411AAD31B687C1B00D5B764 /* AnimationBtnDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1411AAD21B687C1B00D5B764 /* AnimationBtnDemoTests.m */; };
+		14C55E831BA1639400E23CBB /* UIButton+ReversalAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C55E801BA1639400E23CBB /* UIButton+ReversalAnimation.m */; };
+		14C55E841BA1639400E23CBB /* UIView+ReversalAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C55E821BA1639400E23CBB /* UIView+ReversalAnimation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		1411AACC1B687C1B00D5B764 /* AnimationBtnDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimationBtnDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1411AAD11B687C1B00D5B764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1411AAD21B687C1B00D5B764 /* AnimationBtnDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationBtnDemoTests.m; sourceTree = "<group>"; };
+		14C55E7F1BA1639400E23CBB /* UIButton+ReversalAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ReversalAnimation.h"; sourceTree = "<group>"; };
+		14C55E801BA1639400E23CBB /* UIButton+ReversalAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ReversalAnimation.m"; sourceTree = "<group>"; };
+		14C55E811BA1639400E23CBB /* UIView+ReversalAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ReversalAnimation.h"; sourceTree = "<group>"; };
+		14C55E821BA1639400E23CBB /* UIView+ReversalAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ReversalAnimation.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,7 @@
 		1411AAAA1B687C1B00D5B764 = {
 			isa = PBXGroup;
 			children = (
+				14C55E7E1BA162A000E23CBB /* ReversalMethods */,
 				1411AAB51B687C1B00D5B764 /* AnimationBtnDemo */,
 				1411AACF1B687C1B00D5B764 /* AnimationBtnDemoTests */,
 				1411AAB41B687C1B00D5B764 /* Products */,
@@ -117,6 +124,17 @@
 				1411AAD11B687C1B00D5B764 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14C55E7E1BA162A000E23CBB /* ReversalMethods */ = {
+			isa = PBXGroup;
+			children = (
+				14C55E7F1BA1639400E23CBB /* UIButton+ReversalAnimation.h */,
+				14C55E801BA1639400E23CBB /* UIButton+ReversalAnimation.m */,
+				14C55E811BA1639400E23CBB /* UIView+ReversalAnimation.h */,
+				14C55E821BA1639400E23CBB /* UIView+ReversalAnimation.m */,
+			);
+			path = ReversalMethods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +237,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14C55E831BA1639400E23CBB /* UIButton+ReversalAnimation.m in Sources */,
+				14C55E841BA1639400E23CBB /* UIView+ReversalAnimation.m in Sources */,
 				1411AABF1B687C1B00D5B764 /* ViewController.m in Sources */,
 				1411AABC1B687C1B00D5B764 /* AppDelegate.m in Sources */,
 				1411AAB91B687C1B00D5B764 /* main.m in Sources */,
@@ -418,6 +438,7 @@
 				1411AAD81B687C1B00D5B764 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1411AAD91B687C1B00D5B764 /* Build configuration list for PBXNativeTarget "AnimationBtnDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +447,7 @@
 				1411AADB1B687C1B00D5B764 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
