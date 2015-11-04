@@ -1,8 +1,8 @@
 简单的视图反转动画
-===
-
-主要用的是iOS的核心动画－__CAKeyframeAnimation__ 
 ---
+
+##主要用的是iOS的核心动画－__CAKeyframeAnimation__  
+
 ### 首先，跟CABasicAnimation相比，前者只能从一个数值（fromValue）变到另一个数值（toValue）,而CAKeyframeAnimation会使用一个数组来保存这些数值。  
 ###-属性解析  
 ####-values: 就是上述的NSArray对象。里面的元素称为“关键帧”（keyframe）。动画对象会在指定的时间（duration）内，依次显示values数组中的每一个关键帧  
@@ -16,7 +16,7 @@
                                  [NSValue valueWithCATransform3D:CATransform3DMakeRotation(M_PI / 4, 0,1,0)],
                                  [NSValue valueWithCATransform3D:CATransform3DMakeRotation(M_PI / 2, 0,1,0)],
                                  [NSValue valueWithCATransform3D:CATransform3DMakeRotation(M_PI, 0,1,0)]];  
-                                 reversalAnimation.cumulative = YES;
+    animation.cumulative = YES;
     animation.duration = duration;
     animation.removedOnCompletion = YES;
     animation.delegate = self;  
